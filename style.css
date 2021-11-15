@@ -1,0 +1,78 @@
+body{
+    background-color:#FFFFFE;
+    font-family: Arial;
+    }
+button{
+    background-color: white;
+    border: solid 0.5px lightgray;
+    vertical-align: middle;
+
+    width: 52px;
+    padding: 15px 15px;
+    float:left;
+    }
+.container{
+    width: 208px;
+    height: 361px;
+    border: solid 1px lightgray;
+}
+
+
+#sayi1{
+    background-color: white;
+    text-align: center;
+
+    border: solid 1px lightgray;
+    pointer-events: none;
+    
+    height: 30px;
+    width:206px;
+   
+    text-align: center;
+    padding-top: 10px;
+    }
+#sayi2{
+    background-color: white;
+    text-align: center;
+
+    border: solid 1px lightgray;
+    pointer-events: none;
+    
+    height: 30px;
+    width:206px;
+   
+    text-align: center;
+    padding-top: 10px;
+    }
+#sonuc{
+    background-color: white;
+    text-align: center;
+ 
+    border: solid 1px lightgray;
+    pointer-events: none;
+    
+    height: 30px;
+    width:206px;
+   
+    text-align: center;
+    padding-top: 10px;
+
+}
+#empty{
+    pointer-events: none;
+    height: 46px;
+    width: 52px;
+    padding: 15px 15px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+button:active {
+    background-color: gray;
+}
+#btn-equal{
+    background-color:#3065af;
+    color: white;
+
+}

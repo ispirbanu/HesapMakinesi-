@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="models.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hesap Makinesi</title>
+
+</head>
+<body>
+    <div class="container">
+        <div id="sayi1"> <font color="lightgray"> Sayı 1 </font></div>
+        <div id="sayi2"> <font color="lightgray"> Sayı 2 </font></div>
+        <div id="sonuc"> <font color="lightgray"> Sonuç </font></div>  
+        <button onclick="clearSonuc()"> C </button>
+        <button id="empty">  </button>
+        <button id="empty">  </button>
+        <button onclick="deletefonk('<')"> &larr; </button>
+        </br>
+        <button onclick="fordisplay('7')"> 7 </button>
+        <button onclick="fordisplay('8')"> 8 </button>
+        <button onclick="fordisplay('9')"> 9 </button>
+        <button onclick="operators('/')"> / </button>
+            
+        <br>
+        <button onclick="fordisplay('4')"> 4 </button>
+        <button onclick="fordisplay('5')"> 5 </button>
+        <button onclick="fordisplay('6')"> 6 </button>
+        <button onclick="operators('x')"> x </button>
+        <br>
+        <button onclick="fordisplay('1')"> 1 </button>
+        <button onclick="fordisplay('2')"> 2 </button>
+        <button onclick="fordisplay('3')"> 3 </button>
+        <button onclick="operators('-')"> - </button>
+        <br>
+        <button onclick="fordisplay('.')"> , </button>
+        <button onclick="fordisplay('0')"> 0 </button>
+        <button onclick="operators('+')"> + </button>
+        <button id="btn-equal" onclick="equalfonk()"> = </button>
+    </div>
+        
+</body>
+</html>
