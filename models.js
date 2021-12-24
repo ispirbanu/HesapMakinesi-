@@ -10,9 +10,9 @@ var islemsonucu=0;
 
 //sonuçları temizlemek
 function clearSonuc(){
-	document.getElementById("sonuc").innerHTML = "";
-	document.getElementById("sayi1").innerHTML="";
-	document.getElementById("sayi2").innerHTML="";
+	document.getElementById("sonuc").value = "";
+	document.getElementById("sayi1").value="";
+	document.getElementById("sayi2").value="";
 	sayi1=0;
 	sayi2=0;
 	operatordeger="";
@@ -23,30 +23,30 @@ function clearSonuc(){
 }
 //baştaki sıfırı kaldırmak
 function removeZero(){
-	var val=document.getElementById("sonuc").innerHTML;
+	var val=document.getElementById("sonuc").value;
 	if(val=="0"){
 		valu=" ";
-		document.getElementById("sonuc").innerHTML = valu;
+		document.getElementById("sonuc").value = valu;
 	}
 }
 
 //sayıları girmek
-function fordisplay(myvalue){	
+function fordisplay(myvalue){
 	if(degerkonum==0){
 		sayi1+=myvalue;
 		if(sayac1==1){
-			document.getElementById("sayi1").innerHTML="";
+			document.getElementById("sayi1").value="";
 				sayac1=0;
 		}
-		document.getElementById("sayi1").innerHTML += myvalue;
+		document.getElementById("sayi1").value+= myvalue;
 	}
 	if(degerkonum==1){
 		sayi2+=myvalue;
 		if(sayac2==1){
-			document.getElementById("sayi2").innerHTML="";
+			document.getElementById("sayi2").value="";
 			sayac2=0;
 		}
-		document.getElementById("sayi2").innerHTML +=myvalue;
+		document.getElementById("sayi2").value +=myvalue;
 	}			
 }
 //işlem belirtmek
@@ -64,19 +64,19 @@ function equalfonk(){
 	
 	if(operator=='/'){
 		islemsonucu= sayi1/sayi2;
-		document.getElementById("sonuc").innerHTML= islemsonucu;
+		document.getElementById("sonuc").value= islemsonucu;
 	}
 	if(operator=='x'){
 		islemsonucu= sayi1*sayi2;
-		document.getElementById("sonuc").innerHTML= islemsonucu;
+		document.getElementById("sonuc").value= islemsonucu;
 	}
 	if(operator=='-'){
 		islemsonucu= sayi1-sayi2;
-		document.getElementById("sonuc").innerHTML= islemsonucu;
+		document.getElementById("sonuc").value= islemsonucu;
 	}
 	if(operator=='+'){
 		islemsonucu=(parseFloat(sayi1)+ parseFloat(sayi2));
-		document.getElementById("sonuc").innerHTML= islemsonucu;
+		document.getElementById("sonuc").value= islemsonucu;
 	}
 }
 
@@ -86,12 +86,12 @@ function deletefonk(myvaluee){
 		if(degerkonum==0){
 			var silinmis= sayi1.slice(1,-1);
 			sayi1=silinmis;
-			document.getElementById("sayi1").innerHTML= sayi1;
+			document.getElementById("sayi1").value= sayi1;
 		}
 		else if(degerkonum==1){
 			var silinmis= sayi2.slice(1,-1);
 			sayi2=silinmis;
-			document.getElementById("sayi2").innerHTML= sayi2;
+			document.getElementById("sayi2").value= sayi2;
 		}
 	}
 		
