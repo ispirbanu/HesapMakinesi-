@@ -1,6 +1,4 @@
-//Başlangıçtaki div yazılarını silmek için
-var sayac1=1;
-var sayac2=1;
+
 //hangi sayı üzerinde işlem yapılacağı
 var degerkonum=0; //0- 1.sayıyı, 1- 2.sayıyı gösterir
 var sayi1=0;
@@ -17,35 +15,27 @@ function clearSonuc(){
 	sayi2=0;
 	operatordeger="";
 	islemsonucu=0;
-	sayac1=1;
-	sayac2=1;
+	
 	degerkonum=0;
 }
 //baştaki sıfırı kaldırmak
 function removeZero(){
 	var val=document.getElementById("sonuc").value;
 	if(val=="0"){
-		valu=" ";
-		document.getElementById("sonuc").value = valu;
+		val=" ";
+		document.getElementById("sonuc").value = val;
 	}
 }
-
 //sayıları girmek
 function fordisplay(myvalue){
 	if(degerkonum==0){
 		sayi1+=myvalue;
-		if(sayac1==1){
-			document.getElementById("sayi1").value="";
-				sayac1=0;
-		}
+		
 		document.getElementById("sayi1").value+= myvalue;
 	}
 	if(degerkonum==1){
 		sayi2+=myvalue;
-		if(sayac2==1){
-			document.getElementById("sayi2").value="";
-			sayac2=0;
-		}
+		
 		document.getElementById("sayi2").value +=myvalue;
 	}			
 }
@@ -56,7 +46,6 @@ function operators(myoperator){
 		operator=myoperator;
 	}
 }
-
 //işlemleri tamamlamak ve sonucu yazdırmak
 function equalfonk(){
 	removeZero();
@@ -79,7 +68,6 @@ function equalfonk(){
 		document.getElementById("sonuc").value= islemsonucu;
 	}
 }
-
 //rakam silme işlemi	
 function deletefonk(myvaluee){
 	if(myvaluee=="<"){
