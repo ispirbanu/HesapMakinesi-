@@ -1,8 +1,10 @@
 
 //hangi sayı üzerinde işlem yapılacağı
 var degerkonum=0; //0- 1.sayıyı, 1- 2.sayıyı gösterir
+//sayılar
 var sayi1=0;
 var sayi2=0;
+//operatörü tut
 var operatordeger="";
 var islemsonucu=0;
 
@@ -15,7 +17,6 @@ function clearSonuc(){
 	sayi2=0;
 	operatordeger="";
 	islemsonucu=0;
-	
 	degerkonum=0;
 }
 //baştaki sıfırı kaldırmak
@@ -29,13 +30,11 @@ function removeZero(){
 //sayıları girmek
 function fordisplay(myvalue){
 	if(degerkonum==0){
-		sayi1+=myvalue;
-		
+		sayi1+=myvalue;	
 		document.getElementById("sayi1").value+= myvalue;
 	}
 	if(degerkonum==1){
 		sayi2+=myvalue;
-		
 		document.getElementById("sayi2").value +=myvalue;
 	}			
 }
@@ -50,7 +49,6 @@ function operators(myoperator){
 function equalfonk(){
 	removeZero();
 	degerkonum=-1;
-	
 	if(operator=='/'){
 		islemsonucu= sayi1/sayi2;
 		document.getElementById("sonuc").value= islemsonucu;
